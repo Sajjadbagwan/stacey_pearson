@@ -355,9 +355,14 @@ footer hr {
 }
 @media (max-width: 767px) {
   .banner-slider .go-down {
-    bottom: 48px;
+    bottom: 17px;
     width: 80px;
     height: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .banner-slider .go-down {
+    bottom: 47px;
   }
 }
 .banner-slider .go-down .circle-logo {
