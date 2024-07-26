@@ -55,7 +55,8 @@ footer .footercontainer {
   align-items: center;
   width: 100%;
   padding-bottom: 50px;
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 @media (max-width: 767px) {
   footer .footercontainer {
@@ -84,7 +85,8 @@ footer .footercontainer .column3 {
 }
 footer .footercontainer .column3 ul {
   display: grid;
-  column-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 0;
   margin: 0 auto;
@@ -274,10 +276,12 @@ footer hr {
 .banner-slider .item figure img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   position: absolute;
-  object-position: top;
+  -o-object-position: top;
+     object-position: top;
   left: 0;
   top: 0;
 }
@@ -344,14 +348,14 @@ footer hr {
 @media (max-width: 767px) {
   .banner-slider .go-down::after {
     top: 21%;
-    height: 38px;
+    height: 42px;
     width: 80px;
     border-radius: 60px 60px 0 0;
   }
 }
 @media (max-width: 767px) {
   .banner-slider .go-down {
-    bottom: 48px;
+    bottom: 16px;
     width: 80px;
     height: 80px;
   }
@@ -369,12 +373,6 @@ footer hr {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-}
-@media (max-width: 767px) {
-  .banner-slider .go-down .circle-logo {
-    bottom: -11px;
-    position: relative;
-  }
 }
 
 .gallery-section {
@@ -413,7 +411,8 @@ footer hr {
   margin: 0;
   padding: 0;
   display: grid;
-  column-gap: 25px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
 }
@@ -445,7 +444,8 @@ footer hr {
 @media (max-width: 767px) {
   .gallery-section ul li figure img {
     height: 246px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .gallery-section ul li .gallery-name {
@@ -520,20 +520,23 @@ footer hr {
 .about-us-section .content-outer {
   padding: 0 92px;
   display: flex;
-  column-gap: 130px;
+  -moz-column-gap: 130px;
+       column-gap: 130px;
   position: relative;
   align-items: center;
 }
 @media (max-width: 1023px) {
   .about-us-section .content-outer {
     padding: 0;
-    column-gap: 70px;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
   }
 }
 @media (max-width: 767px) {
   .about-us-section .content-outer {
     row-gap: 30px;
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
     flex-wrap: wrap;
   }
 }
@@ -593,7 +596,8 @@ footer hr {
   .about-us-section .content-outer .stacey-image figure img {
     width: 100%;
     height: 567px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .about-us-section .content-outer .stacey-content {
@@ -708,7 +712,8 @@ footer hr {
 @media (max-width: 767px) {
   .event-section .event-slider .item .eventdetails .event-content h1 {
     font-size: 25px;
-    line-height: 48px;
+    line-height: 30px;
+    margin-bottom: 10px;
   }
 }
 .event-section .event-slider .item .eventdetails .event-content h2 {
@@ -718,7 +723,6 @@ footer hr {
 }
 @media (max-width: 767px) {
   .event-section .event-slider .item .eventdetails .event-content h2 {
-    text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 0.8px;
   }
@@ -764,12 +768,14 @@ footer hr {
   width: 100%;
   max-width: 616px;
   height: 502px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 767px) {
   .event-section .event-slider .item .eventdetails .event-image figure img {
     height: 288px;
-    object-position: top;
+    -o-object-position: top;
+       object-position: top;
   }
 }
 .event-section .event-slider .item hr {
@@ -1106,6 +1112,9 @@ footer hr {
   font-weight: 600;
   letter-spacing: 0.5px;
 }
+.contact-modal .modalcontent .fulldiv input[type=text]::-moz-placeholder, .contact-modal .modalcontent .fulldiv input[type=email]::-moz-placeholder, .contact-modal .modalcontent .fulldiv textarea::-moz-placeholder {
+  color: #A4948F;
+}
 .contact-modal .modalcontent .fulldiv input[type=text]::placeholder, .contact-modal .modalcontent .fulldiv input[type=email]::placeholder, .contact-modal .modalcontent .fulldiv textarea::placeholder {
   color: #A4948F;
 }
@@ -1320,7 +1329,8 @@ footer hr {
 }
 .gallery-view .mainpopup .popupslider .imagebox img {
   height: calc(100vh - 290px);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 @media only screen and (max-width: 1600px) {
@@ -1467,7 +1477,8 @@ footer hr {
 }
 .gallery-view .mainpopup .sync-slider .slick-track .innerslider img {
   height: 230px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media only screen and (max-width: 1600px) {
   .gallery-view .mainpopup .sync-slider .slick-track .innerslider img {
@@ -1839,16 +1850,6 @@ a:focus, a:visited {
 }
 
 @keyframes spin2 {
-  0% {
-    border: #ffffff;
-    border-width: 1.5px;
-  }
-  100% {
-    border: #ffffff;
-    border-width: 1.5px;
-  }
-}
-@-webkit-keyframes spin2 {
   0% {
     border: #ffffff;
     border-width: 1.5px;
