@@ -174,14 +174,15 @@
                 border-radius: 60px 60px 0 0;
             }
         }
+        @include sm{
+            bottom: 47px !important;
+        }
         @include md{
             bottom: 17px;
             width: 80px;
             height: 80px;
         }
-        @include sm{
-            bottom: 47px;
-        }
+       
         .circle-logo{
             position: absolute;
             left: 50%;
