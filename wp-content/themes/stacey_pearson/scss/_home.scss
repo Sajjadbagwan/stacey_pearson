@@ -135,7 +135,7 @@
       &.slick-active {
         button {
           background-color: $border-color;
-          //width: 2px;
+          width: 2px;
           border-radius: 10px;
           //margin-left: -0.5px;
           position: relative;
@@ -290,6 +290,9 @@
             font-size: 15px;
             letter-spacing: 0.8px;
             text-align: left;
+          }
+          &:hover:before {
+            width: calc(100% + 85px);
           }
         }
       }
@@ -853,8 +856,7 @@
       &:hover {
         color: $border-color;
         &::before {
-          //   width: 100%;
-          width: calc(100% + 80px);
+          width: 100%;
         }
       }
     }

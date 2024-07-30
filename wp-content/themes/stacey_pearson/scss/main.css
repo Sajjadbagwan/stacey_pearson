@@ -313,6 +313,7 @@ footer hr {
 }
 .banner-slider .slick-dots li.slick-active button {
   background-color: #E1CCBF;
+  width: 2px;
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -516,6 +517,9 @@ footer hr {
     letter-spacing: 0.8px;
     text-align: left;
   }
+}
+.gallery-section ul li .gallery-name a:hover:before {
+  width: calc(100% + 85px);
 }
 
 .about-us-section {
@@ -1071,7 +1075,7 @@ footer hr {
   color: #E1CCBF;
 }
 .instagram-section .instaname a:hover::before {
-  width: calc(100% + 80px);
+  width: 100%;
 }
 
 .contact-modal {
