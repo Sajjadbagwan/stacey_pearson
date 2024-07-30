@@ -519,7 +519,7 @@ footer hr {
   }
 }
 .gallery-section ul li .gallery-name a:hover:before {
-  width: calc(100% + 85px);
+  width: calc(100% + 80px);
 }
 
 .about-us-section {
