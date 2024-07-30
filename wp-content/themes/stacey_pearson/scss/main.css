@@ -861,7 +861,7 @@ footer hr {
     background-color: transparent;
   }
   .event-section .slick-slider .slick-arrow.slick-prev:hover::after {
-    background: url(../images/slick-prev-hover.svg) no-repeat center;
+    background: url(../images/slick-prev-hover.svg) no-repeat center #e1ccbf;
     background-size: 7px 13px;
   }
 }
@@ -902,7 +902,7 @@ footer hr {
     top: auto;
   }
   .event-section .slick-slider .slick-arrow.slick-next:hover::after {
-    background: url(../images/slick-next-hover.svg) no-repeat center;
+    background: url(../images/slick-next-hover.svg) no-repeat center #e1ccbf;
     background-size: 7px 13px;
   }
 }
@@ -1597,7 +1597,7 @@ footer hr {
     opacity: 1;
   }
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev:hover {
-    background: url(../images/mobile-next-hover.svg) no-repeat center #E1CCBF;
+    background: url(../images/mobile-next-hover.svg) no-repeat center;
     transform: rotate(90deg);
   }
 }
@@ -1645,7 +1645,7 @@ footer hr {
     opacity: 1;
   }
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-next:hover {
-    background: url(../images/mobile-next-hover.svg) no-repeat center #E1CCBF;
+    background: url(../images/mobile-next-hover.svg) no-repeat center;
     transform: rotate(-90deg);
   }
 }
