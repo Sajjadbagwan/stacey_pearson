@@ -355,11 +355,6 @@ footer hr {
     border-radius: 60px 60px 0 0;
   }
 }
-@media (max-width: 480px) {
-  .banner-slider .go-down {
-    bottom: 47px !important;
-  }
-}
 @media (max-width: 767px) {
   .banner-slider .go-down {
     bottom: 17px;
