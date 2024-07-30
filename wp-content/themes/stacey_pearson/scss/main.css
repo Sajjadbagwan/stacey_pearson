@@ -313,9 +313,10 @@ footer hr {
 }
 .banner-slider .slick-dots li.slick-active button {
   background-color: #E1CCBF;
-  width: 2px;
   border-radius: 10px;
-  margin-left: -0.5px;
+  position: relative;
+  z-index: 1;
+  margin: 0 -0.5px;
 }
 .banner-slider .go-down {
   position: absolute;
@@ -574,7 +575,7 @@ footer hr {
   background-color: #E1CCBF;
   left: auto;
   right: -20%;
-  top: 171px;
+  top: 135px;
   transform: translateX(-50%);
 }
 @media (max-width: 767px) {
@@ -794,7 +795,7 @@ footer hr {
   height: 2px;
   width: 100%;
   max-width: 332px;
-  background-color: #E1CCBF;
+  background-color: #e1ccbf;
   margin: 40px 0 0 0;
 }
 @media (max-width: 767px) {
@@ -806,7 +807,7 @@ footer hr {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #5B5055;
+  background-color: #5b5055;
   display: inline-block;
   z-index: -1;
   position: absolute;
@@ -856,7 +857,7 @@ footer hr {
     background-color: transparent;
   }
   .event-section .slick-slider .slick-arrow.slick-prev:hover::after {
-    background: url(../images/slick-prev-hover.svg) no-repeat center #E1CCBF;
+    background: url(../images/slick-prev-hover.svg) no-repeat center;
     background-size: 7px 13px;
   }
 }
@@ -897,7 +898,7 @@ footer hr {
     top: auto;
   }
   .event-section .slick-slider .slick-arrow.slick-next:hover::after {
-    background: url(../images/slick-next-hover.svg) no-repeat center #E1CCBF;
+    background: url(../images/slick-next-hover.svg) no-repeat center;
     background-size: 7px 13px;
   }
 }
@@ -967,7 +968,8 @@ footer hr {
     width: 40px;
   }
 }
-.event-section .btn-wrap .next-btn svg g .another-circle, .event-section .btn-wrap .next-btn svg g .another-circle-next {
+.event-section .btn-wrap .next-btn svg g .another-circle,
+.event-section .btn-wrap .next-btn svg g .another-circle-next {
   stroke-dasharray: 227;
   stroke-dashoffset: 227;
   transition: stroke-dashoffset 2s linear;
@@ -1014,7 +1016,8 @@ footer hr {
 .event-section .btn-wrap .prev-btn svg {
   transform: rotate(180deg);
 }
-.event-section .btn-wrap .prev-btn svg g .another-circle, .event-section .btn-wrap .prev-btn svg g .another-circle-next {
+.event-section .btn-wrap .prev-btn svg g .another-circle,
+.event-section .btn-wrap .prev-btn svg g .another-circle-next {
   stroke-dasharray: 227;
   stroke-dashoffset: 227;
   transition: stroke-dashoffset 2s linear;
@@ -1068,7 +1071,7 @@ footer hr {
   color: #E1CCBF;
 }
 .instagram-section .instaname a:hover::before {
-  width: 100%;
+  width: calc(100% + 80px);
 }
 
 .contact-modal {
@@ -1107,7 +1110,9 @@ footer hr {
   width: 100%;
   margin: 0 0 10px 0;
 }
-.contact-modal .modalcontent .fulldiv input[type=text], .contact-modal .modalcontent .fulldiv input[type=email], .contact-modal .modalcontent .fulldiv textarea {
+.contact-modal .modalcontent .fulldiv input[type=text],
+.contact-modal .modalcontent .fulldiv input[type=email],
+.contact-modal .modalcontent .fulldiv textarea {
   background-color: transparent;
   font-size: 16px;
   line-height: 35px;
@@ -1119,18 +1124,22 @@ footer hr {
   max-width: 275px;
   width: 100%;
   border-radius: 0;
-  color: #A4948F;
+  color: #a4948f;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
 .contact-modal .modalcontent .fulldiv input[type=text]::-moz-placeholder, .contact-modal .modalcontent .fulldiv input[type=email]::-moz-placeholder, .contact-modal .modalcontent .fulldiv textarea::-moz-placeholder {
-  color: #A4948F;
+  color: #a4948f;
 }
-.contact-modal .modalcontent .fulldiv input[type=text]::placeholder, .contact-modal .modalcontent .fulldiv input[type=email]::placeholder, .contact-modal .modalcontent .fulldiv textarea::placeholder {
-  color: #A4948F;
+.contact-modal .modalcontent .fulldiv input[type=text]::placeholder,
+.contact-modal .modalcontent .fulldiv input[type=email]::placeholder,
+.contact-modal .modalcontent .fulldiv textarea::placeholder {
+  color: #a4948f;
 }
 @media (max-width: 767px) {
-  .contact-modal .modalcontent .fulldiv input[type=text], .contact-modal .modalcontent .fulldiv input[type=email], .contact-modal .modalcontent .fulldiv textarea {
+  .contact-modal .modalcontent .fulldiv input[type=text],
+  .contact-modal .modalcontent .fulldiv input[type=email],
+  .contact-modal .modalcontent .fulldiv textarea {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.4px;
@@ -1673,7 +1682,8 @@ footer hr {
     display: none;
   }
 }
-.gallery-view .mainpopup .next-prev svg g .another-circle, .gallery-view .mainpopup .next-prev svg g .another-circle-next {
+.gallery-view .mainpopup .next-prev svg g .another-circle,
+.gallery-view .mainpopup .next-prev svg g .another-circle-next {
   stroke-dasharray: 227;
   stroke-dashoffset: 227;
   transition: stroke-dashoffset 2s linear;
