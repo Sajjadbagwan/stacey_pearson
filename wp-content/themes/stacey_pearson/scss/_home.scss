@@ -291,6 +291,9 @@
             letter-spacing: 0.8px;
             text-align: left;
           }
+          &:hover {
+            position: unset;
+          }
           &:hover:before {
             width: calc(100% + 80px);
           }

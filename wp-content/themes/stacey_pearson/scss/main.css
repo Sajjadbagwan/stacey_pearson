@@ -513,6 +513,9 @@ footer hr {
     text-align: left;
   }
 }
+.gallery-section ul li .gallery-name a:hover {
+  position: unset;
+}
 .gallery-section ul li .gallery-name a:hover:before {
   width: calc(100% + 80px);
 }
