@@ -11,17 +11,15 @@ jQuery( document ).ready(function() {
   }); 
 
   setTimeout(() => {
-    AOS.init({
-        offset: 200,
-    });
+    AOS.init();
   }, 120);
 
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     //Smooth Scroll
     const smoother = ScrollSmoother.create({
-        smooth: 2,
-        effects: true,
-        smoothTouch: 5,
+      smooth: 1,
+      effects: true,
+      smoothTouch: 2,
     });   
    
 
