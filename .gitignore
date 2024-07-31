@@ -2,6 +2,7 @@
 wp-config.php
 # Example themes
 /wp-content/themes/twenty*/
+/wp-content/themes/stacey_pearson_backup/
 
 # Example plugin
 #/wp-content/plugins/
