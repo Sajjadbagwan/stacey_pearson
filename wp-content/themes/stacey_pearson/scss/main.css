@@ -350,14 +350,14 @@ footer hr {
 @media (max-width: 767px) {
   .banner-slider .go-down::after {
     top: 21%;
-    height: 38px;
+    height: 40px;
     width: 80px;
     border-radius: 60px 60px 0 0;
   }
 }
 @media (max-width: 767px) {
   .banner-slider .go-down {
-    bottom: 48px;
+    bottom: 17px;
     width: 80px;
     height: 80px;
   }
@@ -740,7 +740,8 @@ footer hr {
 @media (max-width: 767px) {
   .event-section .event-slider .item .eventdetails .event-content h1 {
     font-size: 25px;
-    line-height: 48px;
+    line-height: 30px;
+    margin-bottom: 10px;
   }
 }
 .event-section .event-slider .item .eventdetails .event-content h2 {
@@ -750,7 +751,6 @@ footer hr {
 }
 @media (max-width: 767px) {
   .event-section .event-slider .item .eventdetails .event-content h2 {
-    text-transform: uppercase;
     font-size: 15px;
     letter-spacing: 0.8px;
   }
