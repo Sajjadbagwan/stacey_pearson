@@ -17,9 +17,9 @@ jQuery( document ).ready(function() {
     gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
     //Smooth Scroll
     const smoother = ScrollSmoother.create({
-      smooth: 1,
+      smooth: 0,
       effects: true,
-      smoothTouch: 2,
+      smoothTouch: 1,
     });   
    
 
