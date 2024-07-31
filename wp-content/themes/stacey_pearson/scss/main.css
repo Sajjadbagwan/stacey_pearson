@@ -315,7 +315,9 @@ footer hr {
   background-color: #E1CCBF;
   width: 2px;
   border-radius: 10px;
-  margin-left: -0.5px;
+  position: relative;
+  z-index: 1;
+  margin: 0 -0.5px;
 }
 .banner-slider .go-down {
   position: absolute;
@@ -587,7 +589,7 @@ footer hr {
   background-color: #E1CCBF;
   left: auto;
   right: -20%;
-  top: 171px;
+  top: 135px;
   transform: translateX(-50%);
 }
 @media (max-width: 767px) {
@@ -1602,10 +1604,6 @@ footer hr {
     background-size: 7px 4px;
     opacity: 1;
   }
-  .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev:hover {
-    background: url(../images/mobile-next-hover.svg) no-repeat center #E1CCBF;
-    transform: rotate(90deg);
-  }
 }
 .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev::before {
   content: "";
@@ -1649,10 +1647,6 @@ footer hr {
     border: 1px solid #E1CCBF;
     background-size: 10px 6px;
     opacity: 1;
-  }
-  .gallery-view .mainpopup .sync-slider .slick-arrow.slick-next:hover {
-    background: url(../images/mobile-next-hover.svg) no-repeat center #E1CCBF;
-    transform: rotate(-90deg);
   }
 }
 .gallery-view .mainpopup .next-prev {
@@ -1766,13 +1760,28 @@ footer hr {
 body:has(#gallery-view-0.gallery-view .sync-slider .slick-arrow) #gallery-view-0.gallery-view .mainpopup .next-prev {
   display: block;
 }
+@media (max-width: 1023px) {
+  body:has(#gallery-view-0.gallery-view .sync-slider .slick-arrow) #gallery-view-0.gallery-view .mainpopup .next-prev {
+    display: none;
+  }
+}
 
 body:has(#gallery-view-1.gallery-view .sync-slider .slick-arrow) #gallery-view-1.gallery-view .mainpopup .next-prev {
   display: block;
 }
+@media (max-width: 1023px) {
+  body:has(#gallery-view-1.gallery-view .sync-slider .slick-arrow) #gallery-view-1.gallery-view .mainpopup .next-prev {
+    display: none;
+  }
+}
 
 body:has(#gallery-view-2.gallery-view .sync-slider .slick-arrow) #gallery-view-2.gallery-view .mainpopup .next-prev {
   display: block;
+}
+@media (max-width: 1023px) {
+  body:has(#gallery-view-2.gallery-view .sync-slider .slick-arrow) #gallery-view-2.gallery-view .mainpopup .next-prev {
+    display: none;
+  }
 }
 
 html {

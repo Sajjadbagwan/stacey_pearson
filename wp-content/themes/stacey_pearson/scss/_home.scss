@@ -108,7 +108,7 @@
             }
         }  
     }
-    .slick-dots{
+    .slick-dots {
         position: absolute;
         left: 20px;
         bottom: initial;
@@ -116,32 +116,35 @@
         width: auto;
         transform: translateY(-50%);
         z-index: 999;
-        li{
-            display: block;
-            margin: 0 0 -1px 0;
-            width: auto;
-            height: auto;
-            button{
-                width: 1px;
-                height: 21px;
-                background-color: $text-color;
-                padding: 0;
-                border-radius: 0;
-                margin: 0;
-                &:before{
-                    display: none;
-                }
+        li {
+          display: block;
+          margin: 0 0 -1px 0;
+          width: auto;
+          height: auto;
+          button {
+            width: 1px;
+            height: 21px;
+            background-color: $text-color;
+            padding: 0;
+            border-radius: 0;
+            margin: 0;
+            &:before {
+              display: none;
             }
-            &.slick-active{
-                button{
-                    background-color: $border-color;
-                    width: 2px;
-                    border-radius: 10px;
-                    margin-left: -0.5px;
-                }
+          }
+          &.slick-active {
+            button {
+              background-color: $border-color;
+              width: 2px;
+              border-radius: 10px;
+              //margin-left: -0.5px;
+              position: relative;
+              z-index: 1;
+              margin: 0 -0.5px;
             }
+          }
         }
-    }
+      }
     .go-down{
         position: absolute;
         left: 50%;
@@ -343,7 +346,8 @@
                 background-color: $border-color;
                 left: auto;
                 right: -20%;
-                top: 171px;
+                //top: 171px;
+                top: 135px;
                 transform: translateX(-50%);
                 @include md{
                     top: 180px;
@@ -1308,10 +1312,10 @@
                         border: 1px solid $border-color;
                         background-size: 7px 4px;
                         opacity: 1;
-                        &:hover{
-                            background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
-                            transform: rotate(90deg);
-                        }
+                        // &:hover{
+                        //     background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
+                        //     transform: rotate(90deg);
+                        // }
                     }
                     // &::after{
                     //     content: "";
@@ -1368,10 +1372,10 @@
                         border: 1px solid $border-color;
                         background-size: 10px 6px;
                         opacity: 1;
-                        &:hover{
-                            background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
-                            transform: rotate(-90deg);
-                        }
+                        // &:hover{
+                        //     background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
+                        //     transform: rotate(-90deg);
+                        // }
                     }
                 }
             }
@@ -1390,6 +1394,7 @@
                 right: 79px;
                 bottom: 212px;
             }
+            
             @include x-xxl{
                 right: 72px;
                 bottom: 193px;
@@ -1507,11 +1512,26 @@
 
 
 body:has(#gallery-view-0.gallery-view .sync-slider .slick-arrow){
-    #gallery-view-0.gallery-view .mainpopup .next-prev{display: block;}
+    #gallery-view-0.gallery-view .mainpopup .next-prev{
+        display: block;
+        @include x-lg{
+            display: none;
+        }
+    }
 }
 body:has(#gallery-view-1.gallery-view .sync-slider .slick-arrow){
-    #gallery-view-1.gallery-view .mainpopup .next-prev{display: block;}
+    #gallery-view-1.gallery-view .mainpopup .next-prev{
+        display: block;
+        @include x-lg{
+            display: none;
+        }
+    }
 }
 body:has(#gallery-view-2.gallery-view .sync-slider .slick-arrow){
-    #gallery-view-2.gallery-view .mainpopup .next-prev{display: block;}
+    #gallery-view-2.gallery-view .mainpopup .next-prev{
+        display: block;
+        @include x-lg{
+            display: none;
+        }
+    }
 }
