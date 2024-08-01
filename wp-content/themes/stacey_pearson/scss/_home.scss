@@ -274,6 +274,8 @@
                     }
                 }
             }
+            .image-hover:hover + .gallery-name a{position: unset;}
+            .image-hover:hover + .gallery-name a::before{width: 100%;}
             .gallery-name{
                 margin: 36px 0 0 0;
                 @include md{

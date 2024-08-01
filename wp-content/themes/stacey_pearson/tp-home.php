@@ -49,7 +49,7 @@
                             {
                         ?>
                                 <li data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
-                                    <a href="#gallery-view-<?php echo $index; ?>" rel="modal:open" alt="<?php echo $gallery_detail['category_name']; ?>">
+                                    <a class="image-hover" href="#gallery-view-<?php echo $index; ?>" rel="modal:open" alt="<?php echo $gallery_detail['category_name']; ?>">
                                         <figure>
                                             <img src="<?php echo $gallery_detail['image']; ?>" alt="<?php echo $gallery_detail['category_name']; ?>"/>
                                         </figure>

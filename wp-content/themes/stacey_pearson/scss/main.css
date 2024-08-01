@@ -471,6 +471,12 @@ footer hr {
        object-fit: cover;
   }
 }
+.gallery-section ul li .image-hover:hover + .gallery-name a {
+  position: unset;
+}
+.gallery-section ul li .image-hover:hover + .gallery-name a::before {
+  width: 100%;
+}
 .gallery-section ul li .gallery-name {
   margin: 36px 0 0 0;
 }
