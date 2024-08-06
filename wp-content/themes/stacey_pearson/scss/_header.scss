@@ -41,3 +41,28 @@ header{
         }
     }
 }
+
+body:has(#gallery-view-0.gallery-view .sync-slider .slick-arrow){
+    #gallery-view-0.gallery-view .mainpopup .next-prev{
+        display: block;
+        @include x-lg{
+            display: none;
+        }
+    }
+}
+body:has(#gallery-view-1.gallery-view .sync-slider .slick-arrow){
+    #gallery-view-1.gallery-view .mainpopup .next-prev{
+        display: block;
+        @include x-lg{
+            display: none;
+        }
+    }
+}
+body:has(#gallery-view-2.gallery-view .sync-slider .slick-arrow){
+    #gallery-view-2.gallery-view .mainpopup .next-prev{
+        display: block;
+        @include x-lg{
+            display: none;
+        }
+    }
+}
