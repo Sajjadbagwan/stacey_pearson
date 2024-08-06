@@ -301,8 +301,8 @@ footer hr {
   height: auto;
 }
 .banner-slider .slick-dots li button {
-  width: 1px;
-  height: 21px;
+  width: 3px;
+  height: 24px;
   background-color: #5B5055;
   padding: 0;
   border-radius: 0;
@@ -1584,7 +1584,7 @@ footer hr {
     opacity: 1;
   }
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-prev:hover {
-    background: url(../images/mobile-next-hover.svg) no-repeat center #E1CCBF;
+    background: url(../images/mobile-next-hover.svg) no-repeat center ;
     transform: rotate(90deg);
   }
 }
@@ -1632,7 +1632,7 @@ footer hr {
     opacity: 1;
   }
   .gallery-view .mainpopup .sync-slider .slick-arrow.slick-next:hover {
-    background: url(../images/mobile-next-hover.svg) no-repeat center #E1CCBF;
+    background: url(../images/mobile-next-hover.svg) no-repeat center ;
     transform: rotate(-90deg);
   }
 }
