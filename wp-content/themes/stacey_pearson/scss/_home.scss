@@ -108,7 +108,7 @@
             }
         }  
     }
-    .slick-dots{
+    .slick-dots {
         position: absolute;
         left: 20px;
         bottom: initial;
@@ -133,17 +133,35 @@
                 &:before{
                     display: none;
                 }
+        li {
+          display: block;
+          margin: 0 0 -1px 0;
+          width: auto;
+          height: auto;
+          button {
+            width: 1px;
+            height: 21px;
+            background-color: $text-color;
+            padding: 0;
+            border-radius: 0;
+            margin: 0;
+            &:before {
+              display: none;
             }
-            &.slick-active{
-                button{
-                    background-color: $border-color;
-                    width: 2px;
-                    border-radius: 10px;
-                    margin-left: -0.5px;
-                }
+          }
+          &.slick-active {
+            button {
+              background-color: $border-color;
+              width: 2px;
+              border-radius: 10px;
+              //margin-left: -0.5px;
+              position: relative;
+              z-index: 1;
+              margin: 0 -0.5px;
             }
+          }
         }
-    }
+      }
     .go-down{
         position: absolute;
         left: 50%;
@@ -171,7 +189,7 @@
             } 
             @include md{
                 top: 21%;
-                height: 38px;
+                height: 40px;
                 width: 80px;
                 border-radius: 60px 60px 0 0;
             }
@@ -184,7 +202,6 @@
             width: 80px;
             height: 80px;
         }
-       
         .circle-logo{
             position: absolute;
             left: 50%;
@@ -247,7 +264,8 @@
         }
         li{
             @include md{
-                 
+                max-width: 246px;
+                width: 100%;
             }
             figure{
                 margin: 0;
@@ -258,18 +276,26 @@
                 z-index: 1;
                 padding-bottom: 100%;
                 @include md{
-                    max-width: 246px;
-                    padding: 0;
-                    height: 246px;
+                    max-width: 100%;               
                     margin: 0 auto;
                 }
                 img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    position: absolute;
+                    object-position: top;
+                    left: 0;
+                    top: 0;
                     @include md{
-                        height: 246px;
+                        //height: 246px;
                         object-fit: cover;
                     }
                 }
             }
+            .image-hover:hover + .gallery-name a{position: unset;}
+            .image-hover:hover + .gallery-name a::before{width: 100%;}
             .gallery-name{
                 margin: 36px 0 0 0;
                 @include md{
@@ -291,6 +317,9 @@
                         font-size: 15px;
                         letter-spacing: .8px;
                         text-align: left
+                    }
+                    &:hover{
+                        position: unset;
                     }
                 }
             }
@@ -339,7 +368,8 @@
                 background-color: $border-color;
                 left: auto;
                 right: -20%;
-                top: 171px;
+                //top: 171px;
+                top: 135px;
                 transform: translateX(-50%);
                 @include md{
                     top: 180px;
@@ -435,14 +465,16 @@
             .eventdetails{
                 display: flex;
                 justify-content: flex-start;
+                height: 635px;
                 @include md{
                     flex-direction: column-reverse;
+                    height: auto;
                 }
                 .event-content{
                     background-color: $bg-color;
                     padding: 70px 55px;
                     max-width: 332px;
-                    width: 100%;
+                    width: 100%;                    
                     @include x-xxl{
                         padding: 70px 30px;
                     }
@@ -450,7 +482,6 @@
                         max-width: 100%;
                         padding: 20px 40px 80px 40px;
                     }
-                    
                     h1{
                         color: $border-color;
                         text-transform: uppercase;
@@ -459,18 +490,16 @@
                         line-height: normal;
                         @include md{
                             font-size: 25px;
-                            // line-height: 48px;
                             line-height: 30px;
                             margin-bottom: 10px;
-
                         }
                     }
                     h2{
                         color: $white-color;
-                        margin: 0;
+                        margin: 10px 0 0 0;
                         line-height: normal;
                         @include md{
-                            // text-transform: uppercase;
+                            //text-transform: uppercase;
                             font-size: 15px;
                             letter-spacing: .8px;
                         }
@@ -501,21 +530,23 @@
                     
                 }
                 .event-image{
-                    height: 502px;
+                    height: 100%;
                     width: 100%;
                     @include md{
                         height: 288px;
                     }
                     figure{
                         margin: 0;
+                        height: 100%;
                         img{
                             width: 100%;
                             max-width: 616px;
-                            height: 502px;
+                            height: 100%;
                             object-fit: cover;
                             @include md{
                                 height: 288px;
                                 object-position: top;
+                                max-width: 100%;
                             }
                         }
                     }
@@ -1091,7 +1122,7 @@
                 height: calc(100vh - 200px);
             }
             @include md{
-                height: auto;
+                height: calc(100vh - 100px);
             }
             .imagebox {
                 width: 100%;
@@ -1104,17 +1135,18 @@
                     height: calc(100vh - 200px);
                 }
                 @include md{
-                    height: auto;
+                    height: calc(100vh - 100px);
                 }
                 img{
-                    height: calc(100vh - 290px);
-                    object-fit: cover;
+                    height: calc(100vh - 380px);
+                    object-fit: contain;
                     width: 100%;
+                    padding-top: 70px;
                     @media only screen and (max-width:1600px){
-                        height: calc(100vh - 220px);
+                        height: calc(100vh - 310px);
                     }
                     @include x-xxl{
-                        height: calc(100vh - 200px);
+                        height: calc(100vh - 300px);
                     }
                     @include md{
                         height: calc(100dvh - 300px);
@@ -1217,6 +1249,7 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+                margin: 0 auto;
                 .innerslider{
                     padding: 0 14px;
                     cursor: pointer;
@@ -1302,10 +1335,10 @@
                         border: 1px solid $border-color;
                         background-size: 7px 4px;
                         opacity: 1;
-                        &:hover{
-                            background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
-                            transform: rotate(90deg);
-                        }
+                        // &:hover{
+                        //     background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
+                        //     transform: rotate(90deg);
+                        // }
                     }
                     // &::after{
                     //     content: "";
@@ -1364,10 +1397,10 @@
                         border: 1px solid $border-color;
                         background-size: 10px 6px;
                         opacity: 1;
-                        &:hover{
-                            background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
-                            transform: rotate(-90deg);
-                        }
+                        // &:hover{
+                        //     background: url(../images/mobile-next-hover.svg) no-repeat center $border-color;
+                        //     transform: rotate(-90deg);
+                        // }
                     }
                 }
             }
@@ -1381,10 +1414,12 @@
             backface-visibility: hidden;
             -webkit-font-smoothing: subpixel-antialiased;
             pointer-events: none;
+            display: none;
             @media only screen and (max-width:1600px){
                 right: 79px;
                 bottom: 212px;
             }
+            
             @include x-xxl{
                 right: 72px;
                 bottom: 193px;
@@ -1500,3 +1535,28 @@
 }
 
 
+
+body:has(#gallery-view-0.gallery-view .sync-slider .slick-arrow){
+    #gallery-view-0.gallery-view .mainpopup .next-prev{
+        display: block;
+        @include x-lg{
+            display: none;
+        }
+    }
+}
+body:has(#gallery-view-1.gallery-view .sync-slider .slick-arrow){
+    #gallery-view-1.gallery-view .mainpopup .next-prev{
+        display: block;
+        @include x-lg{
+            display: none;
+        }
+    }
+}
+body:has(#gallery-view-2.gallery-view .sync-slider .slick-arrow){
+    #gallery-view-2.gallery-view .mainpopup .next-prev{
+        display: block;
+        @include x-lg{
+            display: none;
+        }
+    }
+}

@@ -23,7 +23,6 @@
                                 <ul>
                                     <li><?php echo $images_with_detail['location']; ?></li>
                                     <li><?php echo $images_with_detail['year']; ?></li>
-                                    <li><?php echo $images_with_detail['size']; ?></li>
                                 </ul>
                             </div>
                         </div>
@@ -50,7 +49,7 @@
                             {
                         ?>
                                 <li data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
-                                    <a href="#gallery-view-<?php echo $index; ?>" rel="modal:open" alt="<?php echo $gallery_detail['category_name']; ?>">
+                                    <a class="image-hover" href="#gallery-view-<?php echo $index; ?>" rel="modal:open" alt="<?php echo $gallery_detail['category_name']; ?>">
                                         <figure>
                                             <img src="<?php echo $gallery_detail['image']; ?>" alt="<?php echo $gallery_detail['category_name']; ?>"/>
                                         </figure>
@@ -114,11 +113,11 @@
                                                 <p><?php echo $popup_images_detail['place_name']; ?></p>
                                             </div> 
                                             <div>
-                                                <span>Size</span> 
+                                                <span>Location</span> 
                                                 <p><?php echo $popup_images_detail['size']; ?></p>
                                             </div>
                                             <div>
-                                                <span>Edition</span> 
+                                                <span>Year</span> 
                                                 <p><?php echo $popup_images_detail['edition']; ?></p>
                                             </div>
                                         </div>
