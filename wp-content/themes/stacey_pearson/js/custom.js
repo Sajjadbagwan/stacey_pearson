@@ -76,7 +76,7 @@ jQuery( document ).ready(function() {
         slidesToScroll: 1,
         asNavFor: '.popupslider',
         dots: false,
-        centerMode: true,
+       // centerMode: true,
         focusOnSelect: true,
         responsive: [
           {
