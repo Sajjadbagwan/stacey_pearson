@@ -151,7 +151,7 @@
                            
                         ?>
             </div>
-            <?php if(count($popup_images_details) > 7){ ?>
+            <?php //if(count($popup_images_details) > 7){ ?>
             <a href="javascript:;" class="next-prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="165" viewBox="0 0 45 165">
                     <g id="Group_127" data-name="Group 127" transform="translate(-1327.5 -735.5)">
@@ -176,7 +176,7 @@
                     </g>
                 </svg>
             </a>
-            <?php } ?>
+            <?php //} ?>
         </div>
         <?php  include 'footer-popup.php';?>
     </div>
