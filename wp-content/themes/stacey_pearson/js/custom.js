@@ -101,6 +101,8 @@ jQuery( document ).ready(function() {
           jQuery("html").addClass("popupopen");
           setTimeout(function(){
             jQuery(".mainpopup .popupslider").slick('setPosition');
+            jQuery(".mainpopup .popupslider").slick("slickGoTo", 0);
+            jQuery(".mainpopup .sync-slider").slick("slickGoTo", 0);
             // jQuery(".mainpopup .sync-slider").slick('setPosition');
             jQuery(".mainpopup .popupslider .imagebox .contentbox").css("display","block");
           },1000)          
